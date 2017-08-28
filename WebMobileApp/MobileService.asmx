@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="VB" CodeBehind="~/App_Code/MobileService.vb" Class="Warpfusion.A4PP.WebServices.MobileService" %>

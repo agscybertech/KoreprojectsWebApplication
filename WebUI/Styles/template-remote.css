@@ -1,0 +1,73 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body {background:#ffffff}
+.admin .center {width:960px; background:#FFFFFF; border:0}
+	.admin #logout {margin:5px 10px; padding-top:10px}
+		.admin #logout a {display:block; width:120px; height:20px; padding:10px 0; margin:2px; float:left; background:url(../images/admin-button.png) 0 0 no-repeat; color:#FFFFFF}
+		.admin #logout a:hover {background:url(../images/admin-button.png) -120px 0 no-repeat}
+	
+	.admin #top {background:url(../images/main-bg.jpg) 0 0 repeat-x}
+		.admin #top h1 {float:left; margin:10px 25px; font-size:30px; border:none; padding:0; color:#ebebeb; text-shadow:0 2px 2px #111}
+		.admin #top #add {margin:8px 25px}
+	
+	.admin #content {margin:10px; font-size:12px; font-family:Arial, Helvetica, sans-serif}
+		.admin-tbl {border:1px solid #f0f0f0}
+		.admin-tbl th {background:#cccccc; border:1px solid #FFFFFF; border-right:1px solid #b7b7b7}
+		.admin-tbl td {vertical-align:middle; border:1px solid #FFFFFF; background:#f0f0f0}
+
+.admin #footer {background-image:none; background-color:#333333}
+.footer {width:960px;}
+
+/* MIDDLE */
+.formlabel {text-align:left; width:220px}
+.formlabel2 {text-align:left; width:440px}
+.formlabel label {font-size:16px}
+.formfield {text-align:left; width: 300px;}
+.formfield input {width:300px; font-size:16px;}
+.formfield select {width:305px; font-size:16px;}
+.formfield textarea {width:300px; font-size:16px;}
+
+/* Rating */
+.ratingStar {
+    font-size: 0pt;
+    width: 26px;
+    height: 24px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.filledRatingStar {
+    background-image: url(../Images/FilledStar.png);
+
+}
+
+.emptyRatingStar {
+    background-image: url(../Images/EmptyStar.png);
+}
+
+.savedRatingStar {
+    background-image: url(../Images/SavedStar.png);
+}
+
+a#button,a#MiddleContent_button,a#MiddleContent_A1,a#MiddleContent_A2,a#MiddleContent_A3,a#MiddleContent_A4 {background:url(../images/menu_bg.jpg) 0 0 repeat-x; border:1px solid #FFFFFF; display:block; padding: 0 10px; height:18px; color:#FFFFFF; margin:0 5px; line-height:1.5em; font-size:12px; margin-top:5px; text-decoration:none;}
+a#button:hover,a#MiddleContent_button:hover,a#MiddleContent_A1:hover,a#MiddleContent_A2:hover,a#MiddleContent_A3:hover,a#MiddleContent_A4:hover {background:url(../images/button_bg.jpg) 0 0 repeat-x; color:#464646; font-size:12px;}
+
+/* Noteboard */
+a#noteboard_button {background:url(../images/menu_bg.jpg) 0 0 repeat-x; border:1px solid #FFFFFF; display:block; padding: 0px 5px 0px 5px; height:18px; color:#FFFFFF; margin:0 5px; line-height:1.7em; font-size:10px; margin-top:5px; text-decoration:none;}
+a#noteboard_button:hover {background:url(../images/button_bg.jpg) 0 0 repeat-x; color:#464646; font-size:10px;}
+
+.formbox { width:400px; height:34px; top:54px; left:187px; border:0 !important; background:url(../images/formbg.png) repeat-x 0 0; padding:10px; }
+.check { width:166px; height: auto;  #height:34px; background:url(../images/inputbg.png) repeat-x 0 0; float:left; border:0 !important; padding:8px 10px; #padding:0px 0px; -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+    border-radius: 10px; }
+.check select {width:166px; height: auto; border:0 !important; background: none !important;  font-size:14px !important; color:#4b4b4b; line-height:22px !important; float:left;}
+
+.textfield{ width:127px; height:22px; float:left;  background:url(../images/search-txtbox.jpg) repeat-x; margin:5px 0 0 5px; }
+
+.textfield input {border:0 !important; background:none !important;  font-size:14px !important; color:White; line-height:22px !important; width:118px; height: auto; padding:2px 5px; #padding:0;}
+
+.button_serch { width:68px; height:22px; cursor:pointer; border:none !important; margin:5px 0 0 5px; #margin-left:0px; #float:right;}

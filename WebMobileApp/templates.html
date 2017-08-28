@@ -1,0 +1,219 @@
+<!-- ******************************************************************************************* -->
+
+
+<script type="text/ng-template" id="mainmenu.html">
+	<section id="mainmenu" ng-controller="MainMenuCtrl" ng-class="{open:state=='open', close:state=='close'}">
+		<a ng-click="goTo('jobs')" class="btn jobs">
+			<i class="icon-check"></i>
+			<span>Jobs</span></a>
+		<a ng-click="goTo('timesheet')" class="btn timesheet">
+			<i class="icon-time"></i>
+			<span>Timesheet</span></a>
+		<a ng-click="goTo('reorder')" class="btn reorder">
+			<i class="icon-list-ul"></i>
+			<span>Reorder</span></a>
+		<a ng-click="goTo('photos')" class="btn photos">
+			<i class="icon-camera"></i>
+			<span>Photos</span></a>
+		<footer messages xxx="stone"></footer>
+	</section>
+</script>
+
+
+<!-- ******************************************************************************************* -->
+
+
+<script type="text/ng-template" id="messages.html">
+	<footer class="footer" id="messages" ng-class="{open:toggle, write:writeMode, process:process}">
+		<h2>From: {{getMsgFrom()}}</h2>
+		<p>{{getMsg()}}</p>
+		<nav>
+			<a class="btn new" ng-click="writeMsg()"><i class="icon-plus"></i>NEW</a>
+			<a class="btn arrow" ng-class="{hide:toggle}" ng-click="next()"><i class="icon-chevron-right"></i></a>
+			<a class="btn" ng-class="{hide:toggle}" ng-click="toggle=!toggle"><i class="icon-caret-up"></i>OPEN</a>
+			<a class="btn" ng-class="{hide:!toggle}" ng-click="toggle=!toggle"><i class="icon-caret-down"></i>CLOSE</a>
+			<a class="btn" ng-class="{hide:!toggle}" ng-click="deleteMsg()"><i class="icon-trash"></i>DELETE</a>
+			<a class="btn" ng-class="{hide:!toggle}" ng-click="replyMsg()"><i class="icon-reply"></i>REPLY</a>
+			<a class="btn arrow" ng-class="{hide:toggle}" ng-click="prev()"><i class="icon-chevron-left"></i></a>
+		</nav>
+	</footer>
+</script>
+
+
+<!-- ******************************************************************************************* -->
+
+
+<script type="text/ng-template" id="sending.html">
+	<section id="sending" ng-controller="SendingCtrl" ng-class="{open:state=='open', close:state=='close', process:process, finish:finish}">
+		<select class="writeMode" ng-hide="reply" ng-model="sendingTo">
+			<option>Jimi Hendrix</option>
+			<option>Louis Armstrong</option>
+			<option>Jim Morrison</option>
+			<option>Luciano Pavarotti</option>
+		</select>
+		<input type="text" readonly value="To: {{sendingTo}}" ng-hide="!reply">
+		<textarea class="writeMode" ng-model="textMsg"></textarea>
+		<h1 class="appmsg" ng-hide="!finish">{{msg}}</h1>
+		<nav>
+			<a class="btn writeMode left" ng-click="sendMsg()"><i class="icon-cloud-upload"></i>SEND</a>
+			<a class="btn writeMode right" ng-click="goTo('')"><i class="icon-ban-circle"></i>CANCEL</a>
+		</nav>
+	</section>
+</script>
+
+
+<!-- ******************************************************************************************* -->
+
+
+<script type="text/ng-template" id="timesheet.html">
+	<section id="timesheet" ng-controller="TimeSheetCtrl" ng-class="{open:state=='open', close:state=='close'}">
+		<table>
+			<tr>
+				<th>DAY</th>
+				<th>HOURS</th>
+				<th>
+					<a class="btn arrow" ng-class="getPrevWeek()"><i class="icon-chevron-left"></i></a>
+					<a class="btn arrow" ng-class="getNextWeek()"><i class="icon-chevron-right"></i></a></th>
+			</tr>
+			<tr>
+				<td>{{day[0].name +' '+ day[0].date}}</td>
+				<td>{{day[0].value}}</td>
+				<td>
+					<a class="btn" ng-click="goTo('timesheet-edit/:'+0);">
+						<i class="icon-pencil"></i>EDIT</a>
+				</td>
+			</tr>
+			<tr>
+				<td>{{day[1].name +' '+ day[1].date}}</td>
+				<td>{{day[1].value}}</td>
+				<td>
+					<a class="btn" ng-click="goTo('timesheet-edit/:'+1);">
+						<i class="icon-pencil"></i>EDIT</a>
+				</td>
+			</tr>
+			<tr>
+				<td>{{day[2].name +' '+ day[2].date}}</td>
+				<td>{{day[2].value}}</td>
+				<td>
+					<a class="btn" ng-click="goTo('timesheet-edit/:'+2);">
+						<i class="icon-pencil"></i>EDIT</a>
+				</td>
+			</tr>
+			<tr>
+				<td>{{day[3].name +' '+ day[3].date}}</td>
+				<td>{{day[3].value}}</td>
+				<td>
+					<a class="btn" ng-click="goTo('timesheet-edit/:'+3);">
+						<i class="icon-pencil"></i>EDIT</a>
+				</td>
+			</tr>
+			<tr>
+				<td>{{day[4].name +' '+ day[4].date}}</td>
+				<td>{{day[4].value}}</td>
+				<td>
+					<a class="btn" ng-click="goTo('timesheet-edit/:'+4);">
+						<i class="icon-pencil"></i>EDIT</a>
+				</td>
+			</tr>
+			<tr>
+				<td>{{day[5].name +' '+ day[5].date}}</td>
+				<td>{{day[5].value}}</td>
+				<td>
+					<a class="btn" ng-click="goTo('timesheet-edit/:'+5);">
+						<i class="icon-pencil"></i>EDIT</a>
+				</td>
+			</tr>
+			<tr>
+				<td>{{day[6].name +' '+ day[6].date}}</td>
+				<td>{{day[6].value}}</td>
+				<td>
+					<a class="btn" ng-click="goTo('timesheet-edit/:'+6);">
+						<i class="icon-pencil"></i>EDIT</a>
+				</td>
+			</tr>
+			<tr class="total">
+				<td>WEEK TOTAL</td>
+				<td>
+					{{day[0].value+day[1].value+day[2].value+day[3].value+day[5].value+day[6].value+day[6].value}}
+				</td>
+				<td></td>
+			</tr>
+			<tr class="note">
+				<td colspan="3">PAY DAY: Wednesday 19/6/13</td>
+			</tr>
+		</table>
+	</section>
+</script>
+
+
+<!-- ******************************************************************************************* -->
+
+
+<script type="text/ng-template" id="timesheet-edit.html">
+	<section id="timesheet" ng-controller="TimeSheetEditCtrl" ng-class="{open:state=='open', close:state=='close'}">
+		<table>
+			<tr>
+				<th colspan="3">Monday 17 Jun 2013</th>
+			<tr>
+				<td class="text-left">START WORK</td>
+				<td><input id="WorkStart" type="text" ng-model="start" class="datetimepicker"></td>
+			</tr>
+			<tr>
+				<td class="text-left">START LUNCH</td>
+				<td><input type="text" ng-model="startLunch" class="datetimepicker"></td>
+			</tr>
+			<tr>
+				<td class="text-left">FINISH LUNCH</td>
+				<td><input type="text" ng-model="finishLunch" class="datetimepicker"></td>
+			</tr>
+			<tr>
+				<td class="text-left">FINISH WORK</td>
+				<td><input type="text" ng-model="finish" class="datetimepicker"></td>
+			</tr>
+			<tr class="total">
+				<td class="total" colspan="2">
+					TOTAL HOURS: {{getTotal()}}
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<a class="btn" onclick="OnClickGreetings(); return false;"  ng-click="goTo('timesheet')">DONE</a>
+                    <input id="clickMe" type="button">
+				</td>
+			</tr>
+		</table>
+	</section>
+</script>
+
+
+<!-- ******************************************************************************************* -->
+
+
+<script type="text/ng-template" id="jobs.html">
+	<section id="jobs" ng-controller="JobsCtrl" ng-class="{open:state=='open', close:state=='close'}">
+		<h1>{{appName}}</h1>
+	</section>
+</script>
+
+
+<!-- ******************************************************************************************* -->
+
+
+<script type="text/ng-template" id="photos.html">
+	<section id="photos" ng-controller="PhotosCtrl" ng-class="{open:state=='open', close:state=='close'}">
+		<h1>{{appName}}</h1>
+	</section>
+</script>
+
+
+<!-- ******************************************************************************************* -->
+
+
+<script type="text/ng-template" id="reorder.html">
+	<section id="reorder" ng-controller="ReorderCtrl" ng-class="{open:state=='open', close:state=='close'}">
+		<h1>{{appName}}</h1>
+	</section>
+</script>
+
+
+<!-- ******************************************************************************************* -->

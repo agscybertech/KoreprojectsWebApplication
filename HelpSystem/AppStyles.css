@@ -1,0 +1,229 @@
+﻿BODY {font-size:8pt; font-family:Tahoma, Arial, Helvetica, sans-serif;}
+
+/* ----------------- PAGE STYLES ------------------------ */
+.white_nounderline:link {text-decoration: none; color: #CBC9C9}
+.white_nounderline:active {text-decoration: none; color: #CBC9C9}
+.white_nounderline:visited {text-decoration: none; color: #CBC9C9}
+.white_nounderline:hover {background-color: #4F4F4F; color: #CBC9C9}
+
+.page_body {color:#444444;padding:25px; margin:0px; font-size: 8pt; font-family: Tahoma, Arial, Helvetica, sans-serif;}
+.heading /*StyleList*/ {color:#454545;font-size:20pt;}
+.subheading /*StyleList*/ {color:#454545;font-size:12pt;}
+.welcomeheading {color:#454545;font-size:26pt;}
+.stickynote {color:black;padding-top:30px;padding-left:8px;padding-right:8px;padding-bottom:5px;width:150px;height:140px;background-image:url(../_engine/images/pin.gif);background-position:top center;background-repeat:no-repeat;background-color:#FAF269;border-right:1px solid #E0D55E;border-bottom:1px solid #E0D55E;display:none}
+.seealso_heading /*StyleList*/ {color:#454545;font-size:12pt;height:24px}
+.TogglePanel {height:auto!important}
+.FAQPanel {height:auto!important}
+
+.iconpanel {height:110px;width:110px;overflow:hidden;float:left;}
+.iconpanel A:link {text-decoration: none; color: #3399cc;}
+.iconpanel A:active {text-decoration: none; color: #3399cc;}
+.iconpanel A:visited {text-decoration: none; color: #3399cc;}
+.iconpanel A:hover {text-decoration: underline;}
+
+.SmallPopup {border:1px solid black;width:300px;height:100px;background-color:white;outline: 0;}
+.LargePopup {border:1px solid black;width:550px;height:300px;background-color:white;outline: 0;}
+.MouseoverPopup {width:313px;height:177px;padding-top:30px;padding-left:6px;padding-right:6px;padding-bottom:40px;outline: 0;}
+.MouseoverPopup2 {width:400px;height:300px;padding-top:30px;padding-left:6px;padding-right:6px;padding-bottom:40px;outline: 0;}
+
+
+.seealso_list A:link {text-decoration: none; color: #164587;}
+.seealso_list A:active {text-decoration: none; color: #164587;}
+.seealso_list A:visited {text-decoration: none; color: #164587;}
+.seealso_list A:hover {text-decoration: underline;}
+
+.comment_heading {color:#3366CC}
+.comment_body {}
+.comment_time {padding-top:15px;color:#777777}
+.comment_button {font-size:7pt;color:#555555;text-align:center;padding-top:4px;width:82px;height:15px;cursor:pointer;background-image:url(../_engine/images/buttonback.gif)}
+
+
+.blacklink A:link {text-decoration: none; color: #434242;}
+.blacklink A:active {text-decoration: none; color: #434242;}
+.blacklink A:visited {text-decoration: none; color: #434242;}
+.blacklink A:hover {background-color: yellow; color: black}
+
+
+.breadcrumbs /*StyleList*/ {FONT-SIZE: 8pt; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif; COLOR:#B1B0A8;}
+.breadcrumbs A:link {text-decoration: none; color: #B1B0A8}
+.breadcrumbs A:active {text-decoration: none; color: #B1B0A8}
+.breadcrumbs A:visited {text-decoration: none; color: #B1B0A8}
+.breadcrumbs A:hover {text-decoration: underline; color: black}
+
+.pagelist A:link {text-decoration: none; color: #164587;}
+.pagelist A:active {text-decoration: none; color: #164587;}
+.pagelist A:visited {text-decoration: none; color: #164587;}
+.pagelist A:hover {text-decoration: underline;}
+
+.editor_body {margin:0px; background-color:#2E2E2E; color:#EEEEEE;overflow:hidden; background-image:url(../_engine/images/loading.gif);background-repeat:no-repeat;background-position:center center}
+.textbox_black {background-color:#2E2E2E;border:1px solid #777777;color:#DDDDDD}
+
+.FileFolder		{float:left;width:130px;height:150px;BORDER:gray 2px solid;border-collapse:collapse;margin:5px;}
+.FileFolder_FileIcon	{text-align:center}
+.FileFolder_FileName	{background-color:#ebeadb;height:20px;text-align:center}
+.FileFolder_Delete	{background-color:#ebeadb;height:20px}
+.FileFolder_EvenRow	{background-color:#F2F2F2;border:1px solid #E2E2E2}
+.FileFolder_OddRow	{background-color:#FFFFFF;border:1px solid #FFFFFF}
+
+@media print 
+{
+.noPrint    {visibility: hidden;}
+}
+
+
+.conditional_start
+{
+  PADDING-RIGHT: 9px;
+  PADDING-LEFT: 3px; 
+  FONT-WEIGHT: bold; 
+  background-image: url(../_engine/images/conditional_start.gif);
+  background-repeat:no-repeat;
+  background-color:orange;
+  background-position:right center; 
+  COLOR: white; 
+  HEIGHT: 14px;
+}
+
+.conditional_end
+{
+  PADDING-RIGHT: 3px;
+  PADDING-LEFT: 9px; 
+  FONT-WEIGHT: bold; 
+  background-image: url(../_engine/images/conditional_end.gif);
+  background-repeat:no-repeat;
+  background-color:orange;
+  background-position:left center; 
+  COLOR: white; 
+  HEIGHT: 14px;
+}
+
+/* ----------------- CONTENTS STYLES ------------------ */
+.AdminNode {color:#888888;padding-top:18px}
+
+.ContentsLabel {}
+.IndexLabel {}
+.SearchResultsLabel {}
+
+.keywordindex {padding:10px}
+.keywordindex A:link {text-decoration: none; color: #434242;}
+.keywordindex A:active {text-decoration: none; color: #434242;}
+.keywordindex A:visited {text-decoration: none; color: #434242;}
+.keywordindex A:hover {background-color: yellow; color: black}
+
+.AdvancedOptionsPanel {width:100%;border:1px solid #FFFFFF;padding:7px;margin-bottom:10px;background-color:#DDDDDD;}
+
+.searchresults {padding:10px}
+.searchresults A:link {text-decoration: none; color: #434242;}
+.searchresults A:active {text-decoration: none; color: #434242;}
+.searchresults A:visited {text-decoration: none; color: #434242;}
+.searchresults A:hover {background-color: #FBEFA0; }
+
+.static_tree {padding-left:14px}
+.static_tree TD {font-size: 11px; font-family: tahoma,verdana,helvetica; text-decoration: none; white-space:nowrap;}
+.static_tree A  {text-decoration: none;color:#434242}
+
+.HiddenRow {display:none;}
+
+/* ----------------- DATASET STYLES ------------------ */
+.DatasetSummary_Live   		{width:100%;border-top:2px solid #E8E8E8; border-collapse:collapse;}
+.DatasetSummary_Live_OddRow	{background-color:#F0F0F0}
+.DatasetSummary_Live_EvenRow 	{background-color:#FFFFFF}
+.DatasetSummary_Live_Footer	{border-top:2px solid #E8E8E8;}
+.DatasetSummary_Edit 	   	{width:100%;border:6px solid #E3E3E3;background-repeat:no-repeat;background-position:center right;background-image:url(../_engine/images/dataset_summary_label.gif)}
+.DatasetSummary_Edit_fields 	{border-left:0px solid white;border-top:0px solid white}
+
+.DatasetFind_Live		{BORDER:#e3e3e3 10px solid; WIDTH:658px; background-color:white}
+.DatasetFind_Edit		{BORDER:#e3e3e3 10px solid; WIDTH:658px; background-color:white; background-image:url(../_engine/images/dataset_find_label.gif);background-repeat:no-repeat;background-position:top right;}
+.DatasetFind_Fields_Edit	{PADDING:15px; BORDER:white 0px solid;}
+.DatasetFind_Fields_Live	{PADDING:15px;}
+.DatasetFind_Header		{BORDER-LEFT:white 15px solid; BORDER-RIGHT:white 15px solid; BORDER-TOP:white 0px solid; BACKGROUND-IMAGE: url(../_engine/images/dataset_results_heading_back.gif);background-repeat:repeat;background-position:0% 0%; HEIGHT: 31px}
+.DatasetFind_Detail		{BORDER-LEFT:white 15px solid; BORDER-RIGHT:white 15px solid; BORDER-BOTTOM: #d2d7e3 1px solid; BORDER-TOP: white 0px solid}
+.DatasetFind_Footer		{HEIGHT: 35px; BORDER-TOP: white 0px solid; BORDER-LEFT:white 0px solid}
+
+.DatasetDetail_Live		{BORDER:#e3e3e3 10px solid; WIDTH:658px; background-color:white}
+.DatasetDetail_Edit		{BORDER:#e3e3e3 10px solid; WIDTH:658px; background-color:white; background-image:url(../_engine/images/dataset_detail_label.gif);background-repeat:no-repeat;background-position:top right;}
+.DatasetDetail_Fields_Edit	{BORDER-TOP: white 0px solid; BORDER-LEFT: white 0px solid; PADDING:15px;}
+.DatasetDetail_Fields_Live	{PADDING:15px;}
+
+.SummaryField		{DISPLAY: inline-block; WIDTH: 200px; overflow:hidden;}
+.SummaryField A:link 	{text-decoration: none; color: #434242;}
+.SummaryField A:active 	{text-decoration: none; color: #434242;}
+.SummaryField A:visited	{text-decoration: none; color: #434242;}
+.SummaryField A:hover 	{background-color: yellow; color: black}
+
+.FindHeaderLabel	{DISPLAY: inline-block; WIDTH: 100px;overflow:hidden;}
+
+.FindDetailField	{DISPLAY: inline-block; WIDTH: 100px; overflow:hidden;}
+.FindDetailField A:link {text-decoration: none; color: #3399cc;}
+.FindDetailField A:active {text-decoration: none; color: #3399cc;}
+.FindDetailField A:visited {text-decoration: none; color: #3399cc;}
+.FindDetailField A:hover {text-decoration: underline;}
+
+.fieldlabel 	{WIDTH:120px; COLOR:#434242; TEXT-ALIGN:right;padding-right:5px;padding-top:7px;display:inline-block}
+.memolabel 	{DISPLAY:inline-block; WIDTH:125px; height:45px;COLOR:#434242; TEXT-ALIGN:right;padding-right:5px;}
+.fieldbox  {WIDTH:300px; HEIGHT:18px; margin-top:4px;display:inline-block}
+.fieldlist {WIDTH:300px; HEIGHT: 24px;margin-top:4px;display:inline-block}
+.fieldcheckbox 	{}
+.fieldmemo 	{WIDTH: 300px; HEIGHT: 50px;margin-top:4px;font-size:8pt; font-family:Tahoma, Arial, Helvetica, sans-serif;display:inline-block;vertical-align:top}
+
+
+
+/* ----------------- SKIN STYLES ------------------------ */
+.login_link:link {color: #CBC9C9}
+.login_link:active {color: #CBC9C9}
+.login_link:visited {color: #CBC9C9}
+.login_link:hover {background-color: #4F4F4F; color: #CBC9C9}
+
+.welcome_username {color: #CBC9C9}
+.skin_contentswrapper-2 {width:25%;}
+.skin_container-2 {width:99%;}
+.TelerikModalOverlay {background:black !important; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70) !important; opacity:.7 !important; -moz-opacity:.7 !important;}    
+
+.search_container {}
+.search_button_cell {width:22px;background-image:url(../_engine/images/search.gif);cursor:pointer;}
+.search_textbox_cell {}
+.search_textbox {width:170px;}
+.search_advbutton_cell{width:13px;background-image:url(../_engine/images/search_advanced.gif);cursor:pointer;}
+
+.index_button {cursor:pointer;padding-left:18px;padding-right:22px;padding-top:2px;padding-bottom:2px;background-image:url(../_engine/images/skin_index.gif);background-position:center left;background-repeat:no-repeat}
+.bookmark_button {cursor:pointer;padding-left:18px;padding-right:22px;padding-top:2px;padding-bottom:2px;background-image:url(../_engine/images/skin_bookmark.gif);background-position:center left;background-repeat:no-repeat}
+.print_button {cursor:pointer;padding-left:18px;padding-right:22px;padding-top:2px;padding-bottom:2px;background-image:url(../_engine/images/skin_print.gif);background-position:center left;background-repeat:no-repeat}
+.link_button {cursor:pointer;padding-left:18px;padding-right:22px;padding-top:2px;padding-bottom:2px;background-image:url(../_engine/images/skin_link.gif);background-position:center left;background-repeat:no-repeat}
+
+/* ----------------- EDITOR STYLES ------------------ */
+.reToolbar.Black .Less {background-image:url(../_engine/images/toolbar/less.gif);width:44px}
+.reToolbar.Black .More {background-image:url(../_engine/images/toolbar/more.gif);width:44px}
+.reToolbar.Black .Close {background-image:url(../_engine/images/toolbar/Close.gif)}
+.reToolbar.Black .LinkPage {background-image:url(../_engine/images/toolbar/linkpage.gif)}
+.reToolbar.Black .InsertPageObject {background-image:url(../_engine/images/toolbar/InsertPageObject.gif)}
+.reToolbar.Black .GlobalSearchAndReplace {background-image:url(../_engine/images/toolbar/GlobalSearchAndReplace.gif)}
+.reToolbar.Black .InsertVariable {background-image:url(../_engine/images/toolbar/InsertVariable.gif)}
+.reToolbar.Black .InsertCondition {background-image:url(../_engine/images/toolbar/InsertCondition.gif)}
+.reToolbar.Black .StickyNote {background-image:url(../_engine/images/toolbar/StickyNote.gif)}
+.reToolbar.Black .Insert {background-image:url(../_engine/images/toolbar/InsertPageObject.gif)}
+.reToolbar.Black .PasteImage {background-image:url(../_engine/images/toolbar/PasteImage.gif)}
+.reToolbar.Black .PasteOptions {background-image:url(../_engine/images/toolbar/InsertPageObject.gif)}
+.reToolbar.Black .Justify {background-image:url(../_engine/images/toolbar/InsertPageObject.gif)}
+.reToolbar.Black .Editstylesheet {background-image:url(../_engine/images/toolbar/editstylesheet.gif)}
+
+.reToolbar.Default .Less {background-image:url(../_engine/images/toolbar/less.gif);width:44px}
+.reToolbar.Default .More {background-image:url(../_engine/images/toolbar/more.gif);width:44px}
+.reToolbar.Default .Close {background-image:url(../_engine/images/toolbar/Close.gif)}
+.reToolbar.Default .LinkPage {background-image:url(../_engine/images/toolbar/linkpage.gif)}
+.reToolbar.Default .InsertPageObject {background-image:url(../_engine/images/toolbar/InsertPageObject.gif)}
+.reToolbar.Default .GlobalSearchAndReplace {background-image:url(../_engine/images/toolbar/GlobalSearchAndReplace.gif)}
+.reToolbar.Default .InsertVariable {background-image:url(../_engine/images/toolbar/InsertVariable.gif)}
+.reToolbar.Default .InsertCondition {background-image:url(../_engine/images/toolbar/InsertCondition.gif)}
+.reToolbar.Default .StickyNote {background-image:url(../_engine/images/toolbar/StickyNote.gif)}
+.reToolbar.Default .Insert {background-image:url(../_engine/images/toolbar/InsertPageObject.gif)}
+.reToolbar.Default .PasteImage {background-image:url(../_engine/images/toolbar/PasteImage.gif)}
+.reToolbar.Default .PasteOptions {background-image:url(../_engine/images/toolbar/InsertPageObject.gif)}
+.reToolbar.Default .Justify {background-image:url(../_engine/images/toolbar/InsertPageObject.gif)}
+.reToolbar.Default .Editstylesheet {background-image:url(../_engine/images/toolbar/editstylesheet.gif)}
+
+/* -------------------------- PDF STYLES ------------------------ */
+.PDF_Body {padding-left:120px; padding-right:110px}
+.PDF_Contents_Chaptername {font-family:arial;font-size:13pt;font-weight:bolder;text-decoration:none;color:#231f20}
+.PDF_Contents_Pagename {font-family:arial;font-size:11pt;font-weight:100;text-decoration:none;color:#231f20}
+.PDF_Index_Letter {font-family:arial;font-size:16pt;font-weight:bold;color:black}
+.PDF_Index_Keyword {font-family:arial;text-decoration:none;font-size:12pt;color:black}

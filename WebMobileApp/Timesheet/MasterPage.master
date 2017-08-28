@@ -1,0 +1,30 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="Timesheet_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head runat="server">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../Styles/base.css">
+	<link rel="stylesheet" href="../Styles/skeleton.css">
+	<link rel="stylesheet" href="../Styles/layout.css">
+    <!--[if lt IE 9]>
+		<script src=""../Scripts/html5.js"></script>
+	<![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

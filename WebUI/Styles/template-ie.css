@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+
+#topnav {position:inherit; top:40px}
+#feature {float:left}
+	.feat {margin:0 3px}
+.inner #middle {margin-top:-5px}

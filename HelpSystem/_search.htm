@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Search</title>
+<link href="style_[skin].css" type="text/css" rel="stylesheet"/>
+<link href="pagestyles.css" type="text/css" rel="stylesheet"/>
+<link href="AppStyles.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body style="background-color:transparent">
+<script language="JavaScript" SRC="searchEngine.js"></script>
+<script language="JavaScript" SRC="searchIndex.js"></script>
+
+<form name="searchForm">
+  <input type="text" id="searchField" name="searchField" style="width:170px"/>
+  <input type="Submit" name="Submit" value="Search"/><br>
+  <input type="radio" name="srcriteria" value="any" checked="checked"/>any&nbsp;words
+  &nbsp;&nbsp;<input type="radio" name="srcriteria" value="all"/>all&nbsp;words
+  &nbsp;&nbsp;<input type="radio" name="srcriteria" value="phrase"/>exact&nbsp;phrase
+  &nbsp;&nbsp;<input type="checkbox" id="chkpreview" name="chkpreview" />preview
+  <br/><br/>
+
+<script type="text/javascript">
+//If a search was already performed, populate the search text field
+document.getElementById("searchField").value = getQueryString("searchField")
+//select the appropriate condition
+if (getQueryString("srcriteria") == "any")
+	{
+	document.searchForm.srcriteria[0].checked = true;
+	}
+else if (getQueryString("srcriteria") == "all")
+	{
+	document.searchForm.srcriteria[1].checked = true;
+	}
+else if (getQueryString("srcriteria") == "phrase")
+	{
+	document.searchForm.srcriteria[2].checked = true;
+	}
+
+//check preview checkbox?
+if (getQueryString("chkpreview") == "on")
+    {
+    document.getElementById("chkpreview").checked = true;
+    }
+
+
+//if the search text is not blank, perform the search
+if (getQueryString("searchField") != "") {
+    doSearch()
+    }
+</script>
+  
+</form>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿.skin_body {margin:0px;overflow:auto}
+.skin_detailwrapper {width:100%}
+.skin_separator {display:none}
+.skin_contentswrapper {display:none;width:200px;background-color:#dddddd}
+.skin_pagewrapper {}
+.skin_container {width:100%}
+.skin_header {}
+.skin_contentsheader {background-color:#dddddd}
+.skin_contents {}
+.skin_contentsfooter {}
+.skin_pageheader {}
+.skin_pageleft {display:none}
+.skin_page {background-color:#FFFFFF;}
+.skin_pageright {display:none}
+.skin_pagefooter {}
+.skin_footer {}
+
+.page_body2 {padding-left:42px!important;}
+
+.AdvancedOptionsPanel {width:220px;}
+
+.search_textbox_cell{}
+.search_button_cell{width:23px;height:21px;background-image:url(images_mobile/search.gif)}
+.search_advbutton_cell{display:none}
+.search_textbox{height:15px}
+
+.iconpanel {width:90px;}
+.welcome {width:100%!important}
+
+img {max-width:275px}
+

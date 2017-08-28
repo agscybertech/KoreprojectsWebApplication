@@ -1,0 +1,211 @@
+﻿/* ----- Modify the 'page_body' style to change font, page margin, etc. ---- */
+
+
+BODY,P, Normal
+{
+  FONT-SIZE: 14pt; 
+  FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+TABLE
+{
+  FONT-SIZE: 14pt; 
+  FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+
+H1 
+{
+  FONT-SIZE: 24pt; 
+  FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif; 
+  COLOR: #000000;
+}
+
+H2 
+{
+  FONT-SIZE: 18pt; 
+  FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif; 
+  COLOR: #000000;
+}
+
+H4 
+{
+  FONT-SIZE: 14pt; 
+  FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif; 
+  COLOR: #000000;
+}
+
+
+li 
+{
+  margin-bottom:4px;
+  FONT-SIZE: 14pt; 
+  FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif; 
+  COLOR: #000000;
+}
+
+
+/* ----------------- ADD CUSTOM STYLES BELOW.  ------------------ */
+
+
+
+
+.HiddenLink /*StyleList*/ {}
+.HiddenLink:link {text-decoration: none; color: #376aac;}
+.HiddenLink:active {text-decoration: none; color: #376aac;}
+.HiddenLink:visited {text-decoration: none; color: #376aac;}
+.HiddenLink:hover {text-decoration: underline; color: #0c2d70;}
+
+
+.TogglePanel         {WIDTH:100%; BORDER:1px solid #cccccc; }
+.TogglePanel_Heading {BACKGROUND-IMAGE:url(images/col.gif); BACKGROUND-REPEAT:no-repeat; BACKGROUND-POSITION:Left center; padding-left:20px; padding-top:4px; padding-right:4px; padding-bottom:4px; cursor:pointer; border-left:0px solid white; border-top:0px solid white; vertical-align:top;}
+.TogglePanel_Body    {padding-left:20px; padding-top:4px; padding-right:4px; padding-bottom:4px; border-left:0px solid white; vertical-align:top;}
+
+
+
+/* ------------------ Modify the styles below to add,edit or delete page status entries ---- */
+.TreeNode_status_Pending
+{ 
+  font-family: tahoma; 
+  font-size: 11px; 
+  padding-top:3px;
+  padding-bottom:2px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+  background-color: #A0DC2C;
+}
+
+.TreeNode_status_Incomplete
+{ 
+  font-family: tahoma; 
+  font-size: 11px; 
+  padding-top:3px;
+  padding-bottom:2px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+  background-color: #A0B6FF;
+}
+
+.TreeNode_status_Needs_Review
+{ 
+  font-family: tahoma; 
+  font-size: 11px; 
+  padding-top:3px;
+  padding-bottom:2px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+  background-color: #FFD016;
+}
+
+
+/* ----------------- TREE STYLES ------------------ */
+.RootNode 
+{ 
+  color:#8CB3CA;
+}
+
+
+.TreeView 
+{ 
+  padding-top:14px; 
+  padding-bottom:14px;
+  padding-left:12px; 
+  cursor:default;
+
+
+}
+
+.TreeViewMargin
+{ 
+  padding-top:4px; 
+  padding-left:1px; 
+  cursor:default; 
+}
+
+.TreeNode 
+{ 
+  font-family: tahoma; 
+  font-size: 11px; 
+  padding-top:3px;
+  padding-bottom:2px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+}
+
+.GrayedTreeNode 
+{ 
+  font-family: tahoma; 
+  font-size: 11px; 
+  padding-top:3px;
+  padding-bottom:2px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+  color:#AAA9A9; 
+  cursor:default;
+}
+
+.HoverTreeNode 
+{ 
+  font-family: tahoma; 
+  font-size: 11px; 
+  text-decoration:underline; 
+  padding-top:3px;
+  padding-bottom:2px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+  cursor: default; 
+}
+
+.SelectedTreeNode 
+{ 
+  font-family: tahoma; 
+  font-size: 11px; 
+  background-color: gray; 
+  color:white; 
+  padding-top:2px;
+  padding-bottom:1px;
+  padding-left: 2px; 
+  padding-right: 2px; 
+  cursor: default; 
+  border: 1px solid #3F3F3F;
+}
+
+.MultipleSelectedTreeNode
+{
+  font-family: tahoma; 
+  font-size: 11px; 
+  background-color: gray; 
+  color:white; 
+  padding-top:2px;
+  padding-bottom:1px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+  cursor: default; 
+}
+
+.CutTreeNode
+{
+  font-family: tahoma; 
+  font-size: 11px; 
+  background-color: silver; 
+  color:white; 
+  padding-top:2px;
+  padding-bottom:1px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+  cursor: default; 
+}
+
+.NodeEdit 
+{
+  border:1px gray solid;
+  font-family: tahoma; 
+  font-size: 11px;
+}
+
+.Margin
+{
+  background-color: #E6E6F0;
+}
+
+

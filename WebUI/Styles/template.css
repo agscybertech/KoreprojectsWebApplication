@@ -1,0 +1,172 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+body {background:url(../images/main-bg.jpg) top left repeat; padding:0; margin:0; font-family:"Trebuchet MS", sans-serif; font-size:14px}
+.contentwrap {width:100%}
+.center {width:1010px; line-height:normal; color:#000000}
+.pad {width:1000px; padding:0 5px}
+.sep {height:10px}
+.left {float:left}
+.right {float:right}
+.clr {clear:both; overflow:hidden}
+
+a:link, a:visited {text-decoration:none; color:#0481D1}
+a:hover {color:#555555}
+a.footerlink:link, a.footerlink:visited {text-decoration:none; color:#ACACAC}
+a.footerlink:hover {color:#555555}
+li {list-style-image:url(../images/li.png)}
+
+h1 {font-weight:normal; font-size:36px; color:#525252; padding-bottom:10px; border-bottom:1px dashed #616161}
+h2 {font-weight:normal; font-size:30px; color:#525252; margin:50px 0 10px 0}
+h22 {font-weight:normal; font-size:30px; color:#525252; margin:8px 0 10px 0}
+h3 {font-weight:normal; font-size:24px; color:#252525; margin:8px 0 10px 0}
+h33 {font-weight:normal; font-size:20px; color:#252525;}
+h4 {font-weight:normal; font-size:18px; color:#252525; margin:50px 0 10px 0}
+h6 {font-weight:normal; font-size:16px; color:#252525; margin:30px 0 10px 0}
+h5 {font-weight:normal; font-size:14px; color:#252525; margin:50px 0 10px 0}
+.subhead {font-size:30px}
+
+a.button {display:block}
+a.blue-bt:link, a.blue-bt:visited {font-size:16px; text-transform:uppercase; color:#FFFFFF; background:url(../images/blue_bt.png) top left no-repeat; width:180px; height:25px; text-align:center; line-height:1.5em; padding:10px 0; text-shadow:0 1px 1px #021036}
+a.blue-bt:hover {background-position:top right}
+a.feat-bt {width:300px; height:45px; background:url(../images/homefeat_bt.png) top left no-repeat}
+a.feat-bt:hover {background-position:top right}
+a.black-bt:link, a.black-bt:visited {font-size:16px; text-transform:uppercase; color:#FFFFFF; background:url(../images/black_bt.png) top left no-repeat; width:200px; height:20px; text-align:center; padding:15px 0; text-shadow:0 1px 1px #000000}
+a.black-bt:hover {background-position:top right}
+
+
+/* TOP */
+#head {height:180px; background:url(../images/top-bg.jpg) top left repeat-x}
+	#head .center {height:180px}
+		#logo {padding-top:0px}        /* 10px */
+		#phone {padding-top:65px}
+			#phone span {font-family: Arial, Helvetica, sans-serif; font-size:36px; color:#7d7d7d; font-weight:bold; line-height:1em}
+		#topnav {width:610px; height:40px; position:relative; top:-10px}
+#topsep {background:url(../images/topsep-bg.png) top left repeat-x}
+#botsep {background:url(../images/botsep-bg.png) top left repeat-x}
+
+
+/* MID */
+#tagline {padding-top:15px}
+	#tagline h1 {color:#a3a3a3; font-style:italic; text-shadow:0 2px 2px #111111; font-size:30px; padding:0; border:0; margin:0 0 10px}
+	
+
+/*slide*/
+#slide {height:384px; width:994px; background:url(../images/slideimg-bg.png) top left no-repeat; text-align:left; padding:13px 8px 23px 8px}
+	#slideimg {background:url(../images/slideimg-1.jpg) top left no-repeat}
+	.slide-content {padding:25px 42px; width:440px; height:334px}
+		.slide-content h1 {margin:0; text-transform:uppercase; font-size:48px; color:#ececec; text-shadow:0 2px 2px #6D6157; font-family:Arial, Helvetica, sans-serif; padding:0; border:0}
+		.slide-content .subhead {text-transform:none; font-size:38px}
+		.slide-content .slide-desc {padding:10px 20px; width:350px; height:150px; color:#FFFFFF; background:url(../images/slide-content-bg.png) top left repeat-x}
+
+/*scrollfeature*/
+#featcontainer {height:210px; padding:20px 0}
+	#featcontainer .arrow {display:inline-block; padding:85px 0}
+	#featcontainer #feature {width:930px; height:210px}
+		.feat {width:300px; height:210px; background:url(../images/homefeat-bg.png) top left no-repeat; margin:0 5px}
+			.featcontent {padding:15px 20px 10px; height:135px; overflow:hidden; text-align:left; color:#acacac; font-size:12px; line-height:1.3em}
+				.featcontent h4 {text-align:center; color:#b7b7b7; margin-top:inherit; margin-bottom:15px} 
+				.featcontent img {border:2px solid #555555}
+		.feat:hover .featcontent {color:#ebebeb}
+		.feat:hover .featcontent h4 {color:#FFFFFF}
+
+/*midcontent*/
+#middle {background:url(../images/mid-bg.jpg) bottom left repeat-x #f1f1f1}
+#tabnav {width:480px; height:40px}
+	#midcontent {padding:25px 0}
+		#flowpanes .farticleimg {width:445px; height:285px; padding:15px; background:url(../images/farticleimg-bg.png) top left no-repeat; overflow:hidden; margin-right:25px}
+
+
+/*inner page*/
+.inner #tagline {padding-bottom:10px; background:url(../images/heading-bg.png) center bottom no-repeat; z-index:1000; position:relative}
+.inner #botsep {margin-top:-5px}
+.inner #midcontent img {border:3px solid #FFFFFF}
+.inner #services {width:30%; margin-right:25px; border-right:2px solid #555555; padding-right:15px}
+	.inner #services h4 {margin-top:inherit}
+#gallerycontainer {width:770px}
+	.inner #midcontent #gallerycontainer img {border:0}
+#gallery {width:750px; height:500px; padding:10px 10px 20px 10px; background:url(../images/portfolio-bg.png) top left no-repeat}
+#gallery-nav {height:90px; padding:0 5px}
+	#gallery-nav .arrow {display:inline-block; padding:30px 0}
+	.gallery-item {padding:0 35px}
+		.gallery-item a {display:inline-block; width:120px; height:80px; padding:5px; background:url(../images/gallerythumb-bg.png) top left no-repeat; margin:0 2px}
+		.gallery-item a:hover, .gallery-item a.active {background-position:top right}
+	
+
+/*BOTTOM*/
+#bottom {padding-top:20px; color:#ebebeb; font-size:12px; line-height:1.3em}
+	#bottom h3 {color:#ebebeb; margin-top:inherit; text-shadow:0 2px 2px #111111}
+	#bottom #about {width:285px}
+#portfolio {text-align:right; width:295px}
+	.portf-img {display:inline-block; width:60px; height:40px; padding:5px; background:url(../images/portf-img-bg.png) top left no-repeat; margin:2px 0}
+	.portf-img:hover {background-position:top right}	
+#quote {width:300px; margin:0 60px}
+#footer {margin-top:10px; background:url(../images/footer-bg.png) top left repeat-x; padding:10px 0; color:#b3b3b3; font-size:12px}
+	#footer a:link, #footer a:visited {color:#CCCCCC}
+	#footer a:hover {color:#ffffff}
+#back {position:fixed; right:0; bottom:0; width:50px; height:50px}
+	#back a:link, #back a:visited {display:block; background:url(../images/back-bg.png) top left no-repeat}
+	#back a:hover {background-position:top right}
+	
+	
+/*NAV*/
+.hor-nav {margin:0; padding:0; width:610px; height:40px; background:url(../images/ulnav.png) top left no-repeat}
+	.hor-nav li {float:left; list-style:none}
+		.hor-nav li a {display:block; background:url(../images/topnav.png) no-repeat}
+	.hor-nav li a#home {width:105px; background-position:top left}
+		.hor-nav li a#home:hover, .hor-nav li a#home.active {background-position:0 -40px}
+	.hor-nav li a#about {background-position:-105px 0; margin-left:-5px}
+		.hor-nav li a#about:hover, .hor-nav li a#about.active {background-position:-105px -40px}
+	.hor-nav li a#serv {background-position:-220px 0; margin-left:-5px}
+		.hor-nav li a#serv:hover, .hor-nav li a#serv.active {background-position:-220px -40px}
+	.hor-nav li a#port {background-position:-355px 0; margin-left:-5px}
+		.hor-nav li a#port:hover, .hor-nav li a#port.active {background-position:-355px -40px}
+	.hor-nav li a#contact {background-position:-500px 0; margin-left:-5px}
+		.hor-nav li a#contact:hover, .hor-nav li a#contact.active {background-position:-500px -40px}
+
+/* NOTE: YOU CAN REMOVE THIS FROM HERE
+.tabs {width:470px; background:url(../images/ultabs.png) top left no-repeat}
+	.tabs li a {display:block; background:url(../images/tabs.png) no-repeat; width:160px}
+	.tabs li a#promote {background-position:bottom left}
+		.tabs li a#promote:hover, .tabs li a#promote.active {background-position:top left}
+	.tabs li a#testimonials {background-position:-160px -40px; margin-left:-5px}
+		.tabs li a#testimonials:hover, .tabs li a#testimonials.active {background-position:-160px 0}
+	.tabs li a#contactf {background-position:-320px -40px; margin-left:-5px}
+		.tabs li a#contactf:hover, .tabs li a#contactf.active {background-position:-320px 0}
+TO HERE*/
+
+.navi {width:470px; background:url(../images/ultabs.png) top left no-repeat}
+	.navi li a {display:block; background:url(../images/tabs.png) no-repeat; width:160px}
+	.navi li a#t1 {background-position:bottom left}
+		.navi li a#t1:hover, .navi li a#t1.current {background-position:top left}
+	.navi li a#t2 {background-position:-160px -40px; margin-left:-5px}
+		.navi li a#t2:hover, .navi li a#t2.current {background-position:-160px 0}
+	.navi li a#t3 {background-position:-320px -40px; margin-left:-5px}
+		.navi li a#t3:hover, .navi li a#t3.current {background-position:-320px 0}
+
+/* ------ PRICING PAGE -----------*/
+#pricing {margin:0px}
+	#pricing .coll {width:230px; height:250px; float:left; color:#363636; text-shadow:0 1px 1px #ffffff}
+		#pricing .coll .pricingtop {height:120px; background:url(../images/pricingtop.png) no-repeat}
+			#pricing #plan1 .pricingtop {background-position:0 0}
+			#pricing #plan2 .pricingtop {background-position:-240px 0}
+			#pricing #plan3 .pricingtop {background-position:-480px 0}
+			#pricing #plan4 .pricingtop {background-position:-720px 0}
+		#pricing .coll .pricingcenter {font-size:14px; height:40px; padding:15px 0; background:url(../images/pricingcenter.png) no-repeat; text-align:center}
+			#pricing .coll .pricingcenter span {font-size:18px; color:#111111}
+		#pricing .coll .pricingmid {background:url(../images/pricingmid.png) 0 0 repeat-y; padding:10px 40px; text-align:center; font-size:12px; height:36px}
+		#pricing .coll .pricingbot {background:url(../images/pricingbottom.png) no-repeat; height:30px}
+			#pricing #prem .pricingcenter, #pricing #prem .pricingmid, #pricing #prem .pricingbot {background-position:-240px 0}
+		
+#Div1 {
+    background: url(../images/main-bg.jpg) 0 0 repeat-x;
+}
+
+#Div2 {
+    background: url(../images/topsep-bg.png) top left repeat-x;
+}
+
+#Div3 {
+    background: url(../images/botsep-bg.png) top left repeat-x;
+}

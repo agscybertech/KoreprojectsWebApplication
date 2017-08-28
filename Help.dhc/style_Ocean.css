@@ -1,0 +1,49 @@
+﻿.page_body {}
+
+.skin_body {background-color:#024770;margin:0px;background-image:url(images_ocean/skin_background.gif);background-repeat:repeat-x}
+.skin_detailwrapper {width:990px;background-color:#d8dfe4;}
+.skin_separator {width:8px;cursor:e-resize;}
+.skin_contentswrapper {width:232px;padding-left:15px;}
+.skin_pagewrapper {padding-right:15px}
+.skin_container {width:100%}
+.skin_header {}
+.skin_footer {}
+.skin_contentsheader {border-left:1px solid #cccccc;border-right:1px solid #cccccc;border-top:1px solid #cccccc;color:#444444;}
+.skin_contents {background-color:#ffffff;border-left:1px solid #cccccc;border-right:1px solid #cccccc;border-bottom:1px solid #cccccc}
+.skin_contentsfooter {}
+.skin_pageheader {}
+.skin_pageleft {display:none}
+.skin_page {background-image:url(images_ocean/page_back.jpg);background-repeat:repeat-x;background-color:#FFFFFF;border:1px solid #cccccc}
+.skin_pageright {display:none}
+.skin_pagefooter {}
+.skin_footer {background-color:black}
+
+.index_button {color:#FFFFFF;cursor:pointer;padding-left:20px;padding-right:20px;padding-top:2px;padding-bottom:2px;background-image:url(images_Ocean/index.gif);background-position:center left;background-repeat:no-repeat}
+.bookmark_button {color:#FFFFFF;cursor:pointer;padding-left:20px;padding-right:20px;padding-top:2px;padding-bottom:2px;background-image:url(images_Ocean/bookmark.gif);background-position:center left;background-repeat:no-repeat}
+.print_button {color:#FFFFFF;cursor:pointer;padding-left:20px;padding-right:10px;padding-top:2px;padding-bottom:2px;background-image:url(images_Ocean/print.gif);background-position:center left;background-repeat:no-repeat}
+.link_button {color:#FFFFFF;cursor:pointer;padding-left:20px;padding-right:20px;padding-top:2px;padding-bottom:2px;background-image:url(images_Ocean/link.gif);background-position:center left;background-repeat:no-repeat}
+
+.menu_selected {cursor:pointer; font-size:8pt;  color:#FFFFFF; border-right:1px solid #779baa}
+.menu_notselected {cursor:pointer; font-size:8pt; color:#FFFFFF; border-right:1px solid #779baa}
+.menu_left {width:4px;}
+.menu_right{width:4px;}
+.menu_container{width:100%}
+
+
+.search_textbox_cell{width:161px;height:22px;background-image:url(images_ocean/search_back.gif)}
+.search_button_cell{background-image:url(images_ocean/search_button.gif);width:22px;}
+.search_advbutton_cell{display:none}
+.search_textbox{border-width:0px;width:155px;background-color:transparent}
+
+.seealso_list A:link {text-decoration: none; color: #164587;background-image:url(images_Ocean/pagelist_icon.gif);background-repeat:no-repeat;padding-left:12px;}
+.seealso_list A:active {text-decoration: none; color: #164587;background-image:url(images_Ocean/pagelist_icon.gif);background-repeat:no-repeat;padding-left:12px;}
+.seealso_list A:visited {text-decoration: none; color: #164587;background-image:url(images_Ocean/pagelist_icon.gif);background-repeat:no-repeat;padding-left:12px;}
+.seealso_list A:hover {text-decoration: underline;}
+
+.SelectedTreeNode {background-color: #aaa9a9; color:white; border: 1px solid #c1bebe;}
+
+.login_link {background-image:url(../_engine/images/button_back.gif);padding-bottom:4px;padding-top:4px;padding-left:6px;padding-right:6px}
+.login_link:link {text-decoration: none;color: #CBC9C9}
+.login_link:active {text-decoration: none;color: #CBC9C9}
+.login_link:visited {text-decoration: none;color: #CBC9C9}
+.login_link:hover {background-color: #4F4F4F; color: #CBC9C9}
