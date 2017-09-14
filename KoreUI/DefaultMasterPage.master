@@ -1,0 +1,53 @@
+﻿<%@ Master Language="VB" CodeFile="DefaultMasterPage.master.vb" Inherits="DefaultMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="Styles/template.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/template-adm.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
+    <!--[if lt IE 7]>
+    <link href="Styles/template-ie.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <script src="Scripts/DD_belatedPNG.js"></script>
+    <script>DD_belatedPNG.fix('div, input, img, a, iframe, li');</script>
+    <![endif]-->
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-33931339-1']);
+        _gaq.push(['_setDomainName', 'koreprojects.com']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="contentwrap admin" align="center">
+        <div class="center">
+            <!--header-->
+    	    <div class="left" id="logo"><img src="/images/koreprojects-logo-sm.jpg" width="104" height="64" hspace="10" vspace="0" alt="Kore Projects" border="0" /></div>
+            <!-- header -->
+
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">        
+            </asp:ContentPlaceHolder>
+
+            <!-- footer -->
+            <div class="contentwrap admin" align="center">
+	            <div id="footer" align="center">Copyright © 2011 - Arctic Swan All Rights Reserved - Site by <a href="http://www.agscybertech.com" target="_blank">AGS Cybertech</a></div>
+            </div>
+            <!-- footer -->
+        </div>
+    </div>
+    </form>
+</body>
+</html>
