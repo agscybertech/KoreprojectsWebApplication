@@ -20,7 +20,7 @@
                 <li>hear about any great ideas or features you think would be great,</li>
                 <li>hear any good or bad feedback regarding our service.</li>
             </ul>
-            <p>Just visit our <a href="contact_us.html">Contact Us</a> page, fill out the form and a member of our friendly staff will be happy to help.</p>
+            <p>Just visit our <a href="https://koreprojects.com/contact_form.aspx">Contact Us</a> page, fill out the form and a member of our friendly staff will be happy to help.</p>
         </div>
     </div>
 </asp:Content>

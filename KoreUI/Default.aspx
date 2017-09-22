@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="VB" AutoEventWireup="false" MasterPageFile="~/WebSitePagesMaster.master" CodeFile="Default.aspx.vb" Inherits="_Default" %>
 
-<asp:Content ContentPlaceHolderID="head" ID="ContantHead" runat="server">
+<asp:Content ContentPlaceHolderID="Scripts" ID="ContantHead" runat="server">
     <script type="text/javascript">
         $(document).ready(function () {
             // Activate carousel
@@ -128,7 +128,7 @@
                 <br />
                 management system that is easy for anyone  to use.</h1>
             <a class="free_trial" href="#btnSignup" rel="" id="anchor1" class="anchorLink">free trial</a>
-            <img src="images/top_2.png" alt="" />
+            <img src="images/top_2.png" class="img-responsive" alt="" />
         </div>
         <!--container-->
     </div>
@@ -141,19 +141,19 @@
                 how simple it can be to maximize your productivity </h2>
             <ul class="pannel2_boxes">
                 <li>
-                    <img src="images/pro_tour1.jpg" alt="" />
+                    <img src="images/pro_tour1.jpg" alt="" class="img-responsive" />
                     <h4>Projects Page</h4>
                     <p>All your current and upcoming Projects in one, easy to view list.Easy to use star ranking allows you and staff members to ensure vital jobs get done first.he moment that a stage of the project is complete, a staff member can update the status.</p>
                 </li>
 
                 <li>
-                    <img src="images/pro_tour2.jpg" alt="" />
+                    <img src="images/pro_tour2.jpg" alt="" class="img-responsive" />
                     <h4>Scopes</h4>
                     <p>Planning  is now made very Simple and Easy. You can keep all your project scopes in one place  and add details, quotes and files as they arise until a scope becomes a new job and you can even customize your System</p>
                 </li>
 
                 <li>
-                    <img src="images/pro_tour3.jpg" alt="" />
+                    <img src="images/pro_tour3.jpg" alt="" class="img-responsive" />
                     <h4>Contacts</h4>
                     <p>All your contacts in one place. Categorize your staff, contractors, clients and suppliers for convenience.Invite contacts to one or more jobs and allow them access to all current project information. Information flows  to team members in no time</p>
                 </li>
@@ -241,12 +241,12 @@
                     <img src="images/clogo1.jpg" alt="" /></li>
                 <li>
                     <img src="images/clogo2.jpg" alt="" /></li>
-
+               
                 <li>
                     <img src="images/clogo5.jpg" alt="" /></li>
-                <li>
+              	<li>
                     <img src="images/clogo6.jpg" alt="" /></li>
-                <li>
+                     <li>
                     <img src="images/clogo3.jpg" alt="" /></li>
                 <li>
                     <img src="images/clogo4.jpg" alt="" /></li>
@@ -260,7 +260,7 @@
             <div class="empl_shedule">
                 <h5>MANAGE YOUR EMPLOYEE SCHEDULE FROM WHEREVER YOU ARE </h5>
                 <p>Our website is compatible with IOS Android and Windows phone</p>
-                <a href="KoreMobile.aspx" class="mobile_view">mobile view</a>
+                <a href="KoreMobile.aspx" class="mobile_view"><span><img src="images/foote_logo.png" /> </span>mobile view</a>
                 <a href="" class="google_play">
                     <img src="images/google_play.jpg" /></a>
             </div>
@@ -304,15 +304,15 @@
             <h5>Kore Project is a <span>Mobile Project Management system</span> that is easy for anyone to use.</h5>
             <ul class="flow_icons">
                 <li>
-                    <img src="images/flow1.png" alt="" />
+                    <span class="flow_one flow"><i></i></span>
                     Oversee in Seconds</li>
                 <li>
-                    <img src="images/flow2.png" alt="" />Instant Project Updates</li>
+                    <span class="flow_two"><i></i></span>Instant Project Updates</li>
                 <li>
-                    <img src="images/flow3.png" alt="" />
+                    <span class="flow_three"><i></i></span>
                     Create New Projects Easily</li>
                 <li>
-                    <img src="images/flow4.png" alt="" />
+                   <span class="flow_four"><i></i>	</span>
                     Secure Archives</li>
 
             </ul>
@@ -328,13 +328,13 @@
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">
                         <div class="active item">
-                            <img src="images/project_flow1.png" alt="First Slide" />
+                            <img src="images/project_flow1.png" alt="First Slide"/>
                         </div>
                         <div class="item">
-                            <img src="images/project_flow2.png" alt="Second Slide" />
+                            <img src="images/project_flow2.png" alt="Second Slide"/>
                         </div>
                         <div class="item">
-                            <img src="images/project_flow3.png" alt="Third Slide" />
+                            <img src="images/project_flow3.png" alt="Third Slide"/>
                         </div>
 
                     </div>
@@ -351,6 +351,6 @@
     <!--row-fluid pannel7-->
 
 
-
+    
     <!--<div class="row-fluid pannel8-->
 </asp:Content>

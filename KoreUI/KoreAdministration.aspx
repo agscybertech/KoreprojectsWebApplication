@@ -12,9 +12,6 @@
                 <img src="images/banner-admin.jpg" alt="" class="running_ban_img" />
             </div>
             <!--banner_text-->
-            <br />
-            <br />
-            <br />
             <h2 class="h2_new">Manage remotely and optimize your time</h2>
             <p>
                 Kore Projects is not a program that you need to download and therefore there are no specific system requirements.

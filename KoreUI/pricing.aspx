@@ -13,11 +13,6 @@
                 </div>
                 <!--banner_text-->
 
-                <br />
-                <br />
-                <br />
-
-
                 <div class="col-lg-12 col-md-12 col-sm-12 text-center">
                     <img src="images/Pricing.png.jpg" alt="" />
                     <br />

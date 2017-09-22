@@ -145,7 +145,7 @@
                             <td style="text-align: center; padding: 20px">
                                 <b>Pay by</b>
                                 <asp:RadioButton ID="rbPaypal" runat="server" Text="Paypal" GroupName="PaymentMethod" Checked="true" />
-                                <asp:RadioButton ID="rbCreditCard" runat="server" Text="Credit Card" GroupName="PaymentMethod" />
+                                <asp:RadioButton ID="rbCreditCard" runat="server" Text="Credit Card" GroupName="PaymentMethod" Visible="false" />
                             </td>
                         </tr>
                         <tr id="trCreditCard" runat="server" style="display:none">
@@ -508,6 +508,13 @@
                                         </td>
                                     </tr>
                                 </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="color: #31708f;background-color: #d9edf7;border-color: #bce8f1;padding: 15px;margin-bottom: 20px;border: 1px solid transparent;border-radius: 4px;font-family: Verdana,sans-serif;font-size: 15px;line-height: 1.5;">
+                                    <strong>Info!</strong> We use PayPal as our payment gateway trust in more country's than any other Credit Card in the world this meanswe do not hold your Credit Card details and this insure you have Buyers Protection...
+                                </div>
                             </td>
                         </tr>
                     </table>

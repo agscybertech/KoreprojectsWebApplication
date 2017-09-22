@@ -32,7 +32,7 @@
             <hr />
             <h3>Easy to Use</h3>
             <p>Kore Projects has been designed to be used by anybody - even those with even the most basic computer skills. Try it for free today and you will be amazed at how quickly your new Project Management System is up, running and saving you money! </p>
-
+            
             <p class="b_bg"><strong>Try it for free today and benefits to your business will include:</strong></p>
         </div>
     </div>

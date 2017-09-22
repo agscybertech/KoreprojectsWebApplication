@@ -13,6 +13,7 @@
                 <img src="images/banner-contact.jpg" alt="" class="running_ban_img" />
             </div>
             <!--banner_text-->
+           
             <div class="text-center col-lg-12 col-md-12 col-sm-12">
                 <asp:Label ID="lblErrorMessage" runat="server" Font-Size="Small" ForeColor="red"></asp:Label>
                 <asp:CustomValidator ID="CustomValidator1" ErrorMessage="Please try again." OnServerValidate="ValidateCaptcha" runat="server" />
@@ -47,7 +48,7 @@
                         <asp:TextBox ID="bodytxt" TextMode="MultiLine" runat="server"></asp:TextBox>
                     </div>
 
-                    <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6 veri_form">
                         <span>Verification</span>
                         <asp:UpdatePanel ID="up1" runat="server">
                             <ContentTemplate>
@@ -59,7 +60,7 @@
                                                 EnableViewState="False" />
                                         </td>
                                         <td style="padding-right: 10px">
-                                            <asp:TextBox ID="captchacode" Width="250" placeholder="Write the text shown in images" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="captchacode" Width="250" placeholder="Write Here..." runat="server"></asp:TextBox>
                                         </td>
                                         <td style="text-align: right">
                                             <asp:LinkButton ID="lnkrefresh" runat="server" OnClick="lnkrefresh_Click" Text="Change" CausesValidation="false"> </asp:LinkButton>

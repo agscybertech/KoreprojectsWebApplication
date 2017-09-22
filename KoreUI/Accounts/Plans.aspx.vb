@@ -32,7 +32,7 @@ Partial Class Accounts_Plans
 
             Dim token As String = Request.Params("token")
 
-            If Not String.IsNullOrEmpty(token) Then
+            If Request.QueryString("IsCancel") Is Nothing AndAlso Request.QueryString("IsCancel") <> "1" AndAlso Not String.IsNullOrEmpty(token) Then
                 Dim config = ConfigManager.Instance.GetProperties()
                 Dim accessToken = New OAuthTokenCredential(config).GetAccessToken()
                 Dim apiContext = New APIContext(accessToken)
@@ -57,8 +57,8 @@ Partial Class Accounts_Plans
                         End If
                     End If
 
-                    If Not executedAgreement.agreement_details Is Nothing AndAlso _
-                        Not executedAgreement.agreement_details.last_payment_amount Is Nothing AndAlso _
+                    If Not executedAgreement.agreement_details Is Nothing AndAlso
+                        Not executedAgreement.agreement_details.last_payment_amount Is Nothing AndAlso
                         Convert.ToDecimal(executedAgreement.agreement_details.last_payment_amount.value) = amount Then
                         trPayment.Visible = False
                         trPaymentSucess.Visible = True
@@ -262,7 +262,7 @@ Partial Class Accounts_Plans
             Dim merchantPreferences As New MerchantPreferences
             merchantPreferences.setup_fee = price
             merchantPreferences.return_url = Request.Url.Scheme & "://" + Request.Url.Authority & Request.ApplicationPath & "/Accounts/Plans.aspx?guid=" & guid
-            merchantPreferences.cancel_url = Request.Url.Scheme & "://" + Request.Url.Authority & Request.ApplicationPath & "/Accounts/Plans.aspx"
+            merchantPreferences.cancel_url = Request.Url.Scheme & "://" + Request.Url.Authority & Request.ApplicationPath & "/Accounts/Plans.aspx?IsCancel=1"
             merchantPreferences.auto_bill_amount = "YES"
             merchantPreferences.initial_fail_amount_action = "CANCEL"
             merchantPreferences.max_fail_attempts = "0"
@@ -421,8 +421,14 @@ Partial Class Accounts_Plans
             Dim accessToken = New OAuthTokenCredential(config).GetAccessToken()
             Dim apiContext = New APIContext(accessToken)
 
-            Dim agreement As New Agreement() With {.id = hdnPaypalBillingAgreementID.Value}
-            agreement.Cancel(apiContext, New AgreementStateDescriptor() With {.note = "Agreement Cancelled By User."})
+
+            Try
+                Dim agreement As New Agreement() With {.id = hdnPaypalBillingAgreementID.Value}
+                agreement.Cancel(apiContext, New AgreementStateDescriptor() With {.note = "Agreement Cancelled By User."})
+            Catch ex As Exception
+                lblMsg.Text = "Either recurring billing agreement is already cancelled on paypal or Unknown error ocurred while cancelling recurring billing agreements."
+            End Try
+
 
             m_ManagementService.CancelBillingSubscription(hdnPaypalBillingAgreementID.Value)
 
